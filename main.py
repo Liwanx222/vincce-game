@@ -1,6 +1,7 @@
 # coding:utf-8
 # pip install -U pygame
 # pip install -U math
+
 import pygame
 from math import sqrt
 from pygame.locals import (KEYDOWN, K_ESCAPE, K_SPACE, QUIT)
@@ -30,8 +31,6 @@ def run(*args):
 
     # Boucle de jeu
     MAIN_RUN = True
-    game_speed = 35
-    time = 0
     while MAIN_RUN:
 
         # Ecran de menu
@@ -63,6 +62,10 @@ def run(*args):
                     pass
         
         if loop_game:
+            # Utilise pour calculer le score
+            game_speed = 35
+            time = 0
+            # Creation d'un evenement
             ADDENEMY = pygame.USEREVENT +1
             pygame.time.set_timer(ADDENEMY, 250)
             # Notre joueur

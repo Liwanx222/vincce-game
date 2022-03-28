@@ -29,7 +29,7 @@ class Enemy(pygame.sprite.Sprite):
     def trajectory(self) -> tuple[pygame.Surface, pygame.Rect]:
         _trajectory = pygame.Surface((SCREEN_WIDTH, self.SPRITE_SIZE[1]))
         _trajectory.fill(BLUE)
-        return (_trajectory, _trajectory.get_rect(center=(0, self.y)))
+        return (_trajectory, _trajectory.get_rect(center=(self.x-SCREEN_MID_WIDTH, self.y + self.SPRITE_SIZE[1]/2)))
     
     def update(self) -> None:
         self.rect.move_ip(-self.speed, 0)

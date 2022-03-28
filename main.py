@@ -1,8 +1,9 @@
 # coding:utf-8
-
+# pip install -U pygame
+# pip install -U math
 import pygame
 from math import sqrt
-from pygame import (KEYDOWN, K_UP, K_DOWN, K_LEFT, K_RIGHT, K_ESCAPE, K_SPACE, QUIT)
+from pygame.locals import (KEYDOWN, K_ESCAPE, K_SPACE, QUIT)
 from data import *
 from enemy import Enemy
 from player import Player

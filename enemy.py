@@ -1,4 +1,6 @@
 # coding:utf-8
+# pip install -U pygame
+# pip install -U random
 
 import random
 import pygame

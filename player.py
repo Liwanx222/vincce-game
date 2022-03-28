@@ -1,7 +1,8 @@
-#coding:utf-8
+# coding:utf-8
+# pip install -U pygame
 
 import pygame
-from pygame import (K_UP, K_DOWN, K_LEFT, K_RIGHT, K_ESCAPE, K_SPACE, QUIT)
+from pygame.locals import (K_UP, K_DOWN, K_LEFT, K_RIGHT)
 from data import *
 
 
